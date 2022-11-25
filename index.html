@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/validation/input.css">
     <script src="./main.js" type="module" defer></script>
     <title>Equação de segundo grau</title>
 </head>
@@ -15,7 +16,7 @@
         <div class="box-container">
             <p class="box__title">Digite os coeficientes da equação do segundo grau</p>
             <iframe name="django" style="display:none"></iframe>
-            <form class="form-container" id="myform" action="#" method="post" target="django">
+            <form class="form-container" id="myform" action="#" target="django">
                 <div class="form-rows">
                     <label class="form__letter" for="coe-a">a</label>
                     <input class="form__input" type="number" id="coe-a" required>
@@ -32,7 +33,7 @@
                 </div>
             </form>
             <input class="form__button" type="submit" form="myform" value="Calcular">
-            <p class="box__result"></p>
+            <p class="box__result" id="resultCont"></p>
         </div>
     </div>
 </body>
