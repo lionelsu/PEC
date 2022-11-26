@@ -1,5 +1,5 @@
 /* exemple: 5x² -3x -2=0*/
-import { calcPolynomialEqtn } from './utils.js'
+import { calcPolynomialEqtn } from './assets/util/utils.js'
 
 const form = document.querySelector('#myform')
 

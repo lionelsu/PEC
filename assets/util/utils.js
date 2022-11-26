@@ -1,7 +1,7 @@
 export function calcPolynomialEqtn(a, b, c) {
     const delta = Number(b ** 2 - 4 * a * c)
-    const x1 = Number( (- b + Math.sqrt(delta) ) / (2 * a)).toFixed(4)
-    const x2 = Number( (- b - Math.sqrt(delta) ) / (2 * a)).toFixed(4)
+    const x1 = Number( (- b + Math.sqrt(delta) ) / (2 * a)).toFixed(1)
+    const x2 = Number( (- b - Math.sqrt(delta) ) / (2 * a)).toFixed(1)
 
     const r = {
         none: 'Nenhuma raíz',

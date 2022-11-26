@@ -6,16 +6,22 @@
 
 :root {
     font-size: 62.5%;
+    --bg-color: #0A0A0A;
+    --menu-card: #212121;
+    --primary-text: #FFFFFF;
+    --secondary-text: #BFBFBF;
+    --btn-primary: #3ea6ff;
 }
 
 body {
     font-size: 1.6rem;
+    color: var(--primary-text);
 }
 
 .main-container {
     width: 100vw;
     height: 100vh;
-    background: #27292c;
+    background: var(--bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,9 +31,10 @@ body {
 }
 
 .box-container {
+    height: auto;
     display: flex;
     flex-direction: column;
-    background: #8193a7;
+    background: var(--menu-card);
     gap: 3.0rem;
     border: .1rem solid #ccc;
     border-radius: 1.6rem;
@@ -56,6 +63,13 @@ body {
     height: 3.0rem;
 }
 
+@media (max-width: 349px) {
+    .box__result {
+        display: flex;
+        align-items: center;
+    }
+}
+
 .form__letter {
     margin-right: 1.0rem;
 }
@@ -65,6 +79,8 @@ body {
     font-size: 2.0rem;
     border: none;
     border-radius: .5rem;
+    color: var(--secondary-text);
+    background: var(--bg-color);
 }
 
 .form__input::-webkit-outer-spin-button,
@@ -73,24 +89,25 @@ body {
 }
 
 .form__input:focus {
-    outline: rgb(0, 25, 255) solid .2rem;
+    outline: #008CBA solid .2rem;
 }
 
 .form__button {
-    background: rgb(16, 39, 250);
-    color: white;
+    background: var(--primary-text);
+    color: var(--bg-color);
     font-size: 2.0rem;
     padding: .6rem;
     outline: none;
     cursor: pointer;
     text-decoration: none;
-    border: 0.1rem solid rgb(0, 25, 255);
+    border: 0.2rem solid #008CBA;
     border-radius: 1.0rem;
-    transition: background 400ms;
+    transition: background 0.4s;
 }
 
 .form__button:hover {
-    background: rgb(64, 83, 252);
+    background: #008CBA;
+    color: var(--primary-text);
 }
 
 .form-rows {
