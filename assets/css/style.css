@@ -5,6 +5,7 @@
 }
 
 :root {
+    --warning-color: red;
     font-size: 62.5%;
     --bg-color: #0A0A0A;
     --menu-card: #212121;

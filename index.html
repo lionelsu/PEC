@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/validation/input.css">
     <script src="./main.js" type="module" defer></script>
+    <script src="assets/css/validation/input.js" defer></script>
     <title>Equação do Segundo Grau</title>
 </head>
 <body>
@@ -19,19 +20,19 @@
             <form class="form-container" id="myform" action="#" target="django">
                 <div class="form-rows">
                     <label class="form__letter" for="coe-a">a</label>
-                    <input class="form__input" type="number" id="coe-a" required>
+                    <input class="form__input" type="number" id="coe-a" data-type="coe-a" required>
                 </div>
                 <span class="input__error">este campo não está válido</span>
 
                 <div class="form-rows">
                     <label class="form__letter" for="coe-b">b</label>
-                    <input class="form__input" type="number" id="coe-b" required>
+                    <input class="form__input" type="number" id="coe-b" data-type="coe-b" required>
                 </div>
                 <span class="input__error">este campo não está válido</span>
 
                 <div class="form-rows">
                     <label class="form__letter" for="coe-c">c</label>
-                    <input class="form__input" type="number" id="coe-c" required>
+                    <input class="form__input" type="number" id="coe-c" data-type="coe-c" required>
                 </div>
                 <span class="input__error">este campo não está válido</span>
 

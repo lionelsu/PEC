@@ -1,7 +1,15 @@
 .input__error {
-    color: red;
+    display: none;
+}
+
+.input__error {
+    color: var(--warning-color);
     font-size: 1.4rem;
     margin-top: -2.6rem;
     margin-bottom: -2.5rem;
-    display: none;
+}
+
+.form__input--error {
+    border: red solid .1rem;
+    border-radius: .4rem;
 }
