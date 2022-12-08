@@ -20,21 +20,30 @@
             <form class="form-container" id="myform" action="#" target="django">
                 <div class="form-rows">
                     <label class="form__letter" for="coe-a">a</label>
-                    <input class="form__input" type="number" id="coe-a" data-type="coe-a" required>
+                    <div class="teste">
+                        <input class="form__input" type="number" id="coe-a" data-type="coea" required>
+                        <span class="input__error input__error--invalid">este campo não está válido</span>
+                        <span>&nbsp;</span>
+                    </div>
                 </div>
-                <span class="input__error">este campo não está válido</span>
 
                 <div class="form-rows">
                     <label class="form__letter" for="coe-b">b</label>
-                    <input class="form__input" type="number" id="coe-b" data-type="coe-b" required>
+                    <div class="teste">
+                        <input class="form__input" type="number" id="coe-b" data-type="coeb" required>
+                        <span class="input__error input__error--invalid">este campo não está válido</span>
+                        <span>&nbsp;</span>
+                    </div>
                 </div>
-                <span class="input__error">este campo não está válido</span>
 
                 <div class="form-rows">
                     <label class="form__letter" for="coe-c">c</label>
-                    <input class="form__input" type="number" id="coe-c" data-type="coe-c" required>
+                    <div class="teste">
+                        <input class="form__input" type="number" id="coe-c" data-type="coec" required>
+                        <span class="input__error input__error--invalid">este campo não está válido</span>
+                        <span>&nbsp;</span>
+                    </div>
                 </div>
-                <span class="input__error">este campo não está válido</span>
 
             </form>
             <input class="form__button" type="submit" form="myform" value="Calcular">

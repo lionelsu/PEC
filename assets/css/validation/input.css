@@ -2,11 +2,9 @@
     display: none;
 }
 
-.input__error {
+.input__error--invalid {
     color: var(--warning-color);
     font-size: 1.4rem;
-    margin-top: -2.6rem;
-    margin-bottom: -2.5rem;
 }
 
 .form__input--error {

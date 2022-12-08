@@ -47,7 +47,6 @@ body {
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     font-size: 2.0rem;
-    gap: 3.0rem;
     align-items: center;
 }
 
@@ -76,6 +75,8 @@ body {
 }
 
 .form__input {
+    display: flex;
+    flex-direction: column;
     padding: .7rem;
     font-size: 2.0rem;
     border: none;
